@@ -123,7 +123,7 @@ def custom_cosine_similarity(matrix):
     norms_matrix = np.outer(norms, norms)
     cosine_sim = dot_product / norms_matrix
     return cosine_sim
-@csrf_protect
+
 def main(request):
     new_user_ratings = {}
     if request.method == 'POST':
@@ -148,7 +148,7 @@ def main(request):
         return render(request, 'main/CFform.html')
 def home(request):
     return render(request,'main/home.html')
-@csrf_protect
+
 def SvdK(request):
     new_user_ratings = {}
     if request.method == 'POST':
