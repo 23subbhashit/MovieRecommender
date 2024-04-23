@@ -21,6 +21,7 @@ PORT = int(os.environ.get('PORT', 10000))
 
 CORS_ALLOWED_ORIGINS = [
     "https://movierecommender-he6k.onrender.com",
+    "movierecommender-he6k.onrender.com"
     # Add other allowed origins as needed
 ]
 
@@ -35,8 +36,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'movierecommender-he6k.onrender.com',
+    'https://movierecommender-he6k.onrender.com',
     '0.0.0.0',
-    'localhost'
+   'localhost'
 ]
 
 
