@@ -26,7 +26,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CSRF_TRUSTED_ORIGINS =  [
     "https://movierecommender-he6k.onrender.com",
-    "movierecommender-he6k.onrender.com"
+    
     # Add other allowed origins as needed
 ]
 # Quick-start development settings - unsuitable for production
