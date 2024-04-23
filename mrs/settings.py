@@ -16,6 +16,11 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+# Retrieve the port number from the PORT environment variable or use a default value
+PORT = int(os.environ.get('PORT', 10000))
+
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -26,7 +31,9 @@ SECRET_KEY = "django-insecure-7+7gq_zapq#+fnu4c*4dxy(x+#ga61%5j&$-$8c8s!j#0p=uo8
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'movierecommender-he6k.onrender.com'
+    'movierecommender-he6k.onrender.com',
+    '0.0.0.0',
+    'localhost'
 ]
 
 
